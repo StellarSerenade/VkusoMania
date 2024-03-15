@@ -1,0 +1,628 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.glav_bar {
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    color: black; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .left-menu, .tel a, .glav_menu a {
+    font-family: 'Lato';
+    text-decoration: none;
+    margin: 0 15px;
+    color: inherit; 
+  }
+  
+  .left-menu:hover, .tel a:hover, .glav_menu a:hover {
+    color: #00ff00;
+  }
+  
+  .glav_bar a {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .nazv_photo {
+    margin-top: 10px !important;
+    width: 200px;
+  }
+  
+  .left-menu {
+    margin-left: 20px;
+  }
+  
+  .tel {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tel_menu {
+    width: 35px;
+  }
+  
+  .zel {
+    font-size: 18px;
+    transition: color 300ms ease;
+  }
+  
+  .zel:hover {
+    color: rgb(24, 170, 24);
+  }
+  
+  .glav_menu {
+    margin-left: auto;
+  }
+  
+  .glav_menu a {
+    margin-right: 20px;
+    transition: color 300ms ease;
+  }
+  
+  .glav_menu a:hover {
+    color:  rgb(24, 170, 24);
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -350px; /* Начальное положение за пределами экрана */
+    background-color: #ffffff;
+    height: 100%;
+    width: 350px;
+    z-index: 9999;
+    padding-top: 60px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease; /* Плавный переход для свойства right */
+}
+
+.menu.active {
+    right: 0; /* Показываем меню, сдвигая вправо */
+}
+
+  
+  
+  .menu a {
+    font-family: 'Lato Bold';
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #f0f0f0;
+    color: #00ff00;
+  }
+  
+  .menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    margin: 0 auto;
+    width: 35px;
+    height: 5px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+
+   /* второе меню телефон______ */
+   .zel2 {
+    font-family: 'Lato';
+    text-decoration: none;
+    margin: 0 15px;
+    color: inherit; 
+  }
+   .zel2 {
+    font-size: 18px;
+    transition: color 300ms ease;
+  }
+  
+  .zel2:hover {
+    color: rgb(24, 170, 24);
+  }
+  
+  
+  .glav_menu a {
+    margin-right: 20px;
+    transition: color 300ms ease;
+  }
+  
+  .glav_menu a:hover {
+    color:  rgb(24, 170, 24);
+  }
+
+  .tel2 {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    display: none;
+  }
+
+  .change .bar:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .change .bar:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 1190px) {
+    .glav_bar {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .tel2 {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+      }
+    
+      .tel_menu2 {
+        width: 35px;
+      }
+  
+    .glav_menu, .left-menu, .tel {
+      display: none;
+    }
+  
+    .bar-container {
+        display: flex;
+        margin-left: auto;
+      }
+       
+      .menu-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+
+      .nazv_photo{
+        border: none;
+      }
+      
+  
+    .menu.active {
+      display: block;
+    }
+  
+    .menu a {
+      display: block;
+      padding: 15px;
+      text-align: center;
+      color: #000;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  
+    .menu a:hover {
+      background-color: #f0f0f0;
+      color: #2da32d;
+    }
+  
+    .menu-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .bar-container {
+        display: flex;
+      }
+      
+      .menu-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+      
+     
+      
+    .glav_menu {
+      display: none;
+    }
+  
+   
+  }
+  
+  @media only screen and (max-width: 540px) {
+    .bar-container {
+      flex-direction: column; /* Располагаем элементы в столбик */
+      justify-content: center; /* Центрируем элементы по вертикали */
+      align-items: center; /* Центрируем элементы по горизонтали */
+    }
+  
+    .nazv_photo {
+      margin-bottom: 40px; /* Увеличиваем отступ между логотипом и телефоном */
+      position: relative; /* Относительное позиционирование для контейнера */
+    }
+  
+    .tel2 {
+      position: absolute; /* Абсолютное позиционирование для телефона */
+      bottom: 0; /* Размещаем телефон внизу контейнера */
+      left: 0; /* Размещаем телефон слева внутри контейнера */
+      margin-bottom: 15px; /* Увеличиваем отступ между логотипом и телефоном */
+    }
+  
+    .glav_bar {
+      height: 120px; /* Увеличиваем высоту шапки */
+      padding-top: 20px; /* Увеличиваем верхний отступ шапки */
+      padding-bottom: 20px; /* Увеличиваем нижний отступ шапки */
+      position: relative; /* Относительное позиционирование для контейнера */
+    }
+  
+    .menu-icon {
+      margin-right: 0; /* Убираем отступ справа */
+    }
+  }
+  
+
+
+
+/* MAIN_______________________________________ */
+
+
+.image {
+  position: relative;
+  height: 100vh; /* Устанавливаем высоту блока в 100% высоты видимой области экрана */
+  overflow: hidden;
+  background: url('/img/вход/фон_регистрация.jpeg') center/cover no-repeat; /* Используем изображение как фон */
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Затемнение */
+    backdrop-filter: blur(5px); /* Размытие */
+}
+
+.sign_in {
+    align-items: center;
+    width: 500px; /* Фиксированная ширина блока входа */
+    height: 700px;
+    background-color: white;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .sign_in {
+      width: calc(100% - 20px); /* Уменьшаем ширину блока входа при уменьшении размера экрана */
+      max-width: 500px;
+      margin-top: 100px; /* Добавляем отступ сверху при маленьких экранах */
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .sign_in {
+      height: 650px; /* Уменьшаем высоту блока при ширине экрана менее 376px */
+  }
+}
+
+
+
+.form_login {
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sign_in_name {
+    font-family: 'Lato ExtraBold';
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.input_name {
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 23px;
+}
+
+.info_in_block {
+    font-size: 20px !important; /* Попробуйте использовать !important */
+}
+
+.form {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.input-container {
+    position: relative;
+    margin-top: 5px;
+}
+
+.input-field {
+    color: #333;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    display: block;
+    padding: 20px 10px;
+    background: transparent;
+    padding-left: 43px;
+    transition: border-color 0.3s ease; /* Добавляем анимацию */
+}
+
+.input-field::placeholder {
+    font-family: 'Lato';
+    font-size: 15px;
+}
+
+.input-img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px; /* Задаем желаемую ширину изображения */
+    height: 24px; /* Задаем желаемую высоту изображения */
+    border-radius: 50%; /* Округляем углы для круглого изображения */
+    transition: filter 0.3s ease; /* Добавляем анимацию плавного перехода */
+}
+
+.input-img-gray {
+    filter: grayscale(100%); /* Применяем серый цвет изображения */
+}
+
+.input-field:focus ~ .input-img-gray {
+    filter: grayscale(0%); /* Убираем серый цвет при фокусе с плавным переходом */
+}
+
+.input-img-green {
+    display: none; /* Изначально скрываем зеленое изображение */
+}
+
+.input-field:focus ~ .input-img-green {
+    display: inline-block; /* Показываем зеленое изображение при фокусе */
+}
+
+.graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    stroke: #ccc;
+    pointer-events: none;
+    transition: transform 1s, stroke 1s;
+    transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+}
+
+.input-field:focus ~ .graphic {
+    stroke: #00cc00;
+    transform: translate3d(-66.6%, 0, 0);
+}
+
+input:focus::-webkit-input-placeholder { color: transparent; }
+
+.input_pass {
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info_in_block {
+    font-family: 'Lato';
+    font-size: 16px;
+}
+
+.input100 {
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 0 7px 0 43px;
+}
+
+span.lost_pass {
+    font-family: 'Lato';
+    float: right;
+    transition: color 300ms ease;
+    cursor: pointer;
+}
+
+span.lost_pass:hover {
+    color: rgb(24, 170, 24);
+}
+
+.block_lost {
+    height: 30px;
+    width: 100%;
+}
+
+.login_form_btn {
+    cursor: pointer;
+    font-family: 'Lato ExtraBold';
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    border-radius: 24px;
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 51%, #56ab2f 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    border: none;
+    margin-top: 30px;
+}
+
+.reg_form_btn {
+    cursor: pointer;
+    font-family: 'Lato ExtraBold';
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    border-radius: 24px;
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 51%, #56ab2f 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    border: none;
+    margin-top: 30px;
+}
+
+.login_form_btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.form_btn {
+    margin-top: 20px;
+}
+
+.alterantiv {
+    margin-top: 40px;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+}
+
+.alterantiv2 {
+    margin-top: 30px;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+}
+
+.text_alternativ {
+    font-family: 'Lato';
+    height: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.seti {
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .seti {
+      margin-left: 80px; /* Уменьшаем отступы между иконками */
+      margin-right: 80px; /* Уменьшаем отступы между иконками */
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .seti {
+      margin-left: 60px; /* Уменьшаем отступы между иконками */
+      margin-right: 60px; /* Уменьшаем отступы между иконками */
+  }
+}
+
+
+.seti_img {
+    cursor: pointer;
+}
+
+.reg_block {
+    cursor: pointer;
+    margin-top: 80px;
+    font-family: 'Lato';
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    transition: color 300ms ease;
+}
+
+@media screen and (max-width: 360px) {
+  .reg_block {
+      margin-top: 50px; /* Уменьшаем отступ сверху до 40px при ширине экрана 360px и меньше */
+  }
+}
+
+
+.reg_block:hover {
+    color: rgb(24, 170, 24);
+}
+
+.registration_form {
+    display: none; /* По умолчанию скрыта */
+}
+
+.reg_block2 {
+    cursor: pointer;
+    margin-top: 40px;
+    font-family: 'Lato';
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    transition: color 300ms ease;
+}
+
+.reg_block2:hover {
+    color: rgb(24, 170, 24);
+}
+
