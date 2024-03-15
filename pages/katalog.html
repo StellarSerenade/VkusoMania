@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/katalog.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+        <title>Каталог</title>
+</head>
+<body>
+
+    <header>
+        <div class="glav_bar">
+            <a href="/index.html"><img class="nazv_photo" src="/img/nazvanie.png" alt="nazvanie"></a>
+            <div class="tel2">
+                <img class="tel_menu2" src="/img/icons8-телефон-64.png" alt="">
+                <a class="zel2" href="tel:+79251731445">+7 (925) 173-14-45</a>
+              </div>
+            <div class="bar-container">
+            <div class="menu-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+        </div>
+            <div class="menu">
+              <div class="menu-close">✕</div>
+              <a href="/pages/magazins.html">Магазины</a>
+              <a href="/pages/katalog.html">Каталог</a>
+              <a href="#">Корзина</a>
+              <a href="/pages/sign_up.html">Профиль</a>
+            </div>
+            <a class="left-menu zel" href="/pages/magazins.html">Магазины</a>
+            <div class="tel">
+              <img class="tel_menu" src="/img/icons8-телефон-64.png" alt="">
+              <a class="zel" href="tel:+79251731445">+7 (925) 173-14-45</a>
+            </div>
+            <div class="glav_menu">
+              <a href="/pages/katalog.html">Каталог</a>
+              <a href="#">Корзина</a>
+              <a href="/pages/sign_up.html">Профиль</a>
+            </div>
+          </div>
+                 
+</header>
+
+<main>
+    <div class="catalog">
+      <!-- Control buttons -->
+      <div class="blockkategor">
+      <div class="left_side" id="myBtnContainer">
+          <div class="kt"><p>Категории</p></div>
+    <div class="btn active" onclick="filterSelection('all')"> <p></p> Показать все</div>
+    <div class="btn" onclick="filterSelection('bread')"><p>Хлеб и выпечка</p></div>
+    <div class="btn" onclick="filterSelection('sweets')"> <p>Сладости и дессерты</p> </div>
+    <div class="btn" onclick="filterSelection('dairy')"> <p>Молочные продукты</p></div>
+    <div class="btn" onclick="filterSelection('ready_meals')"> <p>Готовые блюда</p> </div>
+    <div class="btn" onclick="filterSelection('meat_and_poultry')"> <p>Мясо и птица</p> </div>
+    <div class="btn" onclick="filterSelection('Fish_and_seafood')"> <p>Рыба и морепродукты</p> </div>
+
+  </div>
+</div>
+  <div class="right_site">
+    <div class="container">
+        <div class="filterDiv bread">
+          <div class="item_divphoto">
+            <img class="item_img" src="/img/items/6237007744.webp" alt="" style="margin-top: -40px;">
+          </div>
+          <div class="info_under_photo">
+            <p class="item_nazv">Хлеб бездрожжевой на закваске</p>
+            <p class="ves_item">320 г</p>
+            <div class="block_cena">
+              <p class="item_price">54 ₽</p>
+            </div>
+            <div class="item_buy">
+              <img src="/img/items/icons8-корзина-24.png" alt="">
+              <p> В корзину</p>
+            </div>
+          </div>
+        </div>
+        <!-- _______________________________________________ -->
+        <div class="filterDiv bread">
+          <div class="item_divphoto">
+            <img class="item_img" src="/img/items/baget_frantsuzki.jpg" alt="">
+          </div>
+          <div class="info_under_photo">
+            <p class="item_nazv">Багет французский</p>
+            <p class="ves_item">170 г</p>
+            <div class="block_cena">
+              <p class="item_price">79 ₽</p>
+            </div>
+            <div class="item_buy">
+              <img src="/img/items/icons8-корзина-24.png" alt="">
+              <p> В корзину</p>
+            </div>
+          </div>
+        </div>
+        <!-- _______________________________________________ -->
+        <div class="filterDiv meat_and_poultry">
+          <div class="item_divphoto">
+            <img class="item_img" src="/img/items/farsh.webp" alt="" style="margin-top: -60px;">
+          </div>
+          <div class="info_under_photo">
+            <p class="item_nazv">Фарш свиной</p>
+            <p class="ves_item">350 г</p>
+            <div class="block_cena">
+              <p class="item_price">279 ₽</p>
+            </div>
+            <div class="item_buy">
+              <img src="/img/items/icons8-корзина-24.png" alt="">
+              <p> В корзину</p>
+            </div>
+          </div>
+        </div>
+        <!-- _______________________________________________ -->
+        <div class="filterDiv meat_and_poultry">
+          <div class="item_divphoto">
+            <img class="item_img" src="/img/items/Tsyplenoktushka1.jpg" alt="" style="margin-top: -80px;">
+          </div>
+          <div class="info_under_photo">
+            <p class="item_nazv">Тушка цыпленка-бройлера</p>
+            <p class="ves_item">1кг 200г</p>
+            <div class="block_cena">
+              <p class="item_price">320₽/кг</p>
+            </div>
+            <div class="item_buy">
+              <img src="/img/items/icons8-корзина-24.png" alt="">
+              <p> В корзину</p>
+            </div>
+          </div>
+        </div>
+        <!-- _______________________________________________ -->
+        <div class="filterDiv ready_meals">
+          <div class="item_divphoto">
+            <img class="item_img" src="/img/items/borsch.jpg" alt="" style="margin-top: -45px;">
+          </div>
+          <div class="info_under_photo">
+            <p class="item_nazv">Борщ с говядиной</p>
+            <p class="ves_item">310 г</p>
+            <div class="block_cena">
+              <p class="item_price">190 ₽</p>
+            </div>
+            <div class="item_buy">
+              <img src="/img/items/icons8-корзина-24.png" alt="">
+              <p> В корзину</p>
+            </div>
+          </div>
+        </div>
+        <!-- _______________________________________________ -->
+        <div class="filterDiv Fish_and_seafood">
+          <div class="item_divphoto">
+            <img class="item_img" src="/img/items/semga.jpg" alt="" style="margin-top: -30px;">
+          </div>
+          <div class="info_under_photo">
+            <p class="item_nazv">Сёмга слабосолёная</p>
+            <p class="ves_item">340 г</p>
+            <div class="block_cena">
+              <p class="item_price">890 ₽</p>
+            </div>
+            <div class="item_buy">
+              <img src="/img/items/icons8-корзина-24.png" alt="">
+              <p> В корзину</p>
+            </div>
+          </div>
+        </div>
+
+<!-- 2stroka__________________ -->
+
+    <div class="filterDiv dairy">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/творог.webp" alt="" style="margin-top: -40px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Творог Домашний, 9%</p>
+                 <p class="ves_item">400 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">150 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+        <!-- _______________________________________________ -->
+    <div class="filterDiv Fish_and_seafood">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/Кальмар командорский.webp" alt="" style="margin-top: -60px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Кальмар командорский</p>
+                 <p class="ves_item">300 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">230₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+        <!-- _______________________________________________ -->
+    <div class="filterDiv ready_meals">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/Картофельное пюре с куриным жульеном.webp" alt="" style="margin-top: -60px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Картофельное пюре с жульеном</p>
+                 <p class="ves_item">250 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">299 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+
+<!-- 3stroka__________________ -->
+
+    <div class="filterDiv dairy">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/яйца.webp" alt="" style="margin-top: -40px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Яйца</p>
+                 <p class="ves_item">10 шт</p>
+                 <div class="block_cena">
+                     <p class="item_price">139 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+        <!-- _______________________________________________ -->
+    <div class="filterDiv ready_meals">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/Поке с рисом и креветками ЙУМИ.webp" alt="" style="margin-top: -60px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Поке с рисом и креветками ЙУМИ</p>
+                 <p class="ves_item">260 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">337 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+        <!-- _______________________________________________ -->
+    <div class="filterDiv Fish_and_seafood">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/Креветки королевские, варено-мороженые.webp" alt="" style="margin-top: -60px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Креветки, варено-мороженые</p>
+                 <p class="ves_item">320 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">729 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+
+
+<!-- 4stroka__________________ -->
+    <div class="filterDiv dairy">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/йогурт.jpg" alt="" style="margin-top: -40px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Йогурт с вишней</p>
+                 <p class="ves_item">220 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">145 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+        <!-- _______________________________________________ -->
+    <div class="filterDiv sweets">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/malinovi_tort.jpg" alt=""style="margin-top: -60px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Малиновый торт</p>
+                 <p class="ves_item">240 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">260 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+        <!-- _______________________________________________ -->
+    <div class="filterDiv sweets">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/dieticheski_tiramisu.jpg" alt="" style="margin-top: -80px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Тирамису диетический</p>
+                 <p class="ves_item">160 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">200 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+
+    <!-- 5stroka__________________ -->
+    <div class="filterDiv sweets">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/Тарталетка с малиной.webp" alt="" style="margin-top: -30px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Тарталетки с малиной</p>
+                 <p class="ves_item">420 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">580 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+        <!-- _______________________________________________ -->
+    <div class="filterDiv meat_and_poultry">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/Филе грудки индейки.webp" alt="" style="margin-top: -60px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Филе грудки индейки</p>
+                 <p class="ves_item">0.7-0.85 кг</p>
+                 <div class="block_cena">
+                     <p class="item_price">610 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+        <!-- _______________________________________________ -->
+    <div class="filterDiv bread">
+        <div class="item_divphoto">
+            <img class="item_img" src="/img/items/Блины с мясом, замороженные.webp" alt="" style="margin-top: -50px;">
+             </div>
+                 <div class="info_under_photo">
+          <p class="item_nazv">Блины с мясом, замороженные</p>
+                 <p class="ves_item">360 г</p>
+                 <div class="block_cena">
+                     <p class="item_price">110 ₽</p>
+                 </div>
+                 <div class="item_buy">
+                     <img src="/img/items/icons8-корзина-24.png" alt="">
+                     <p> В корзину</p>
+                 </div>
+             </div>
+    </div>
+</div>
+</div>
+</div>
+</main>
+
+
+
+
+<footer>
+    <div class="foot_info_glav">
+        <div class="block_left_help">
+            <p class="block_left_help_nazv">Помощь</p>
+            <div class="stroka1">  
+                <p>Горячая линия</p>
+            <p class="tm_left_1stroka">c 10:00 до 21:00</p>
+            </div>
+            <p class="tm_telefon">+7(495)623-82-52</p>
+            <div class="stroka1">  
+                <p>Заказ по телефону</p>
+            <p class="tm_left_1stroka">c 07:00 до 23:00</p>
+            </div>
+            <p class="tm_telefon">+7(495)333-22-62</p>
+            <div class="stroka1">  
+                <p>Поддержка онлайн-заказов</p>
+            <p class="tm_left_1stroka">Круглосуточно</p>
+            </div>
+            <p class="tm_telefon">+7(495)942-55-91</p>
+        </div>
+
+
+        <div class="block_pravee_help">
+            <p class="block_left_help_nazv">Карьера</p>
+            <div class="stroka1">  
+                <p>Вакансии</p>
+            </div>              
+            <div class="stroka1">  
+                <p>Кассир</p>                
+            </div>                
+            <div class="stroka1">  
+                <p>Продавец</p>
+            </div>
+            <div class="stroka1">  
+                <p>Водитель-курьер</p>
+            </div>
+        </div>
+
+        <div class="block_pravee_partner">
+            <p class="block_left_help_nazv">Партнёрам</p>
+            <div class="stroka1">  
+                <p>Аренда помещений</p>
+            </div>              
+            <div class="stroka1">  
+                <p>Партнерская программа</p>                
+            </div>                
+            <div class="stroka1">  
+                <p>Доставка по России</p>
+            </div>
+            <div class="stroka1">  
+                <p>Для бизнеса</p>
+            </div>
+        </div>
+
+    
+
+ <div class="block_paySystem_app">
+      <p class="block_right_paySystem_nazv">Оплачивайте заказы на сайте</p>
+      <div class="payst">
+      <img src="/img/pay systems/1mir-1.png" alt="" width="70px" >
+      <img src="/img/pay systems/halva.png" alt="" width="70px" >
+      <img src="/img/pay systems/pngwing.com.png" alt="" width="70px" >
+      <img src="/img/pay systems/" alt="" width="60px">
+    </div>
+    <div class="app">
+    <p>Мобильное приложение ВкусоМания</p>
+    <div class="myaapp">
+       <img src="/img/pay systems/android-mobapp.eeb6add6.png" alt="" width="130px">
+       <img src="/img/pay systems/ios-mobapp.ece826d1.png" alt="" width="130px">
+    </div>
+    </div>
+    <div class="input-container">
+        <form id="subscriptionForm">
+            <input id="phoneInput" class="ssilka_app" type="text" placeholder="Введите номер телефона">
+            <button type="submit" class="submit-button">&#10132;</button>
+        </form>
+    </div>
+    
+    
+
+ </div>
+    </div>       
+    <!-- <div class="line"></div> -->
+</footer>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/65e865458d261e1b5f695957/1ho9sn63d';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+  <script src="/js/katalog.js"></script>
+</body>
+</html>

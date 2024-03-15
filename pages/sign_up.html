@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход/Регистрация</title>
+    <link rel="stylesheet" href="/css/sign_up.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+</head>
+<body>
+    
+    <header>
+        <div class="glav_bar">
+            <a href="/index.html"><img class="nazv_photo" src="/img/nazvanie.png" alt="nazvanie"></a>
+            <div class="tel2">
+                <img class="tel_menu2" src="/img/icons8-телефон-64.png" alt="">
+                <a class="zel2" href="tel:+79251731445">+7 (925) 173-14-45</a>
+              </div>
+            <div class="bar-container">
+            <div class="menu-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+        </div>
+            <div class="menu">
+              <div class="menu-close">✕</div>
+              <a href="/pages/magazins.html">Магазины</a>
+              <a href="/pages/katalog.html">Каталог</a>
+              <a href="#">Корзина</a>
+              <a href="#">Профиль</a>
+            </div>
+            <a class="left-menu zel" href="/pages/magazins.html">Магазины</a>
+            <div class="tel">
+              <img class="tel_menu" src="/img/icons8-телефон-64.png" alt="">
+              <a class="zel" href="tel:+79251731445">+7 (925) 173-14-45</a>
+            </div>
+            <div class="glav_menu">
+              <a href="/pages/katalog.html">Каталог</a>
+              <a href="#">Корзина</a>
+              <a href="#">Профиль</a>
+            </div>
+          </div>
+                                                
+        
+        
+</header>
+
+<main>
+    <div class="image">
+        <div class="overlay"></div> <!-- Добавляем слой для затемнения и размытия -->
+    </div>
+    
+    
+    
+
+<!-- Форма входа -->
+<div class="sign_in">
+    <div class="form_login" id="loginForm">
+        <h1 class="sign_in_name">Войти</h1>
+        <div class="input_name">
+            <span class="info_in_block">Имя</span>
+            <div class="form">
+                <div class="input-container">
+                    <input class="input-field" id="username" type="text" autocomplete="off" placeholder="Введите имя" maxlength="16">
+                    <img src="/img/вход/серый профиль.png" alt="фото профиля серое" class="input-img input-img-gray">
+                    <img src="/img/вход/зелёный профиль.png" alt="фото профиля зеленое" class="input-img input-img-green">
+                    <svg class="graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                      <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="input_pass">
+            <span class="info_in_block">Пароль</span>
+            <div class="form">
+                <div class="input-container">
+                    <input class="input-field" id="password" type="password" autocomplete="off" placeholder="Введите пароль" maxlength="20">
+                    <img src="/img/вход/серый замок.png" alt="иконка замка серая" class="input-img input-img-gray">
+                    <img src="/img/вход/зелёный замок.png" alt="иконка замка зеленая" class="input-img input-img-green">
+                    <svg class="graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                      <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="block_lost">
+            <span class="lost_pass">Забыли пароль?</span>
+        </div>
+        <div class="form_btn">
+            <button class="login_form_btn">Войти</button>
+        </div>
+        <div class="alterantiv">
+            <div class="text_alternativ">
+                <span>Или войдите используя</span>
+            </div>
+            <div class="seti">
+                <img class="seti_img" src="/img/вход/vk_icon.png" alt="" width="40px">
+                <img class="seti_img" src="/img/вход/yandex_icon.png" alt="" width="44px">
+                <img class="seti_img" src="/img/вход/google_icon.png" alt="" width="40px">
+            </div>
+        </div>
+        <div class="reg_block">
+            <span id="toggleRegistration" class="reg-niz">Зарегистрироваться</span>
+        </div>
+    </div>
+
+
+
+
+<!-- Форма регистрации -->
+
+    <div class="form_login registration_form" id="registrationForm">
+        <h1 class="sign_in_name">Регистрация</h1>
+        <div class="input_name">
+            <span class="info_in_block">Имя</span>
+            <div class="form">
+                <div class="input-container">
+                    <input class="input-field" id="username2" type="text" autocomplete="off" placeholder="Введите имя" maxlength="16">
+                    <img src="/img/вход/серый профиль.png" alt="" class="input-img input-img-gray">
+                    <img src="/img/вход/зелёный профиль.png" alt="" class="input-img input-img-green">
+                    <svg class="graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                      <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="input_pass">
+            <span class="info_in_block">Пароль</span>
+            <div class="form">
+                <div class="input-container">
+                    <input class="input-field" id="password2" type="password" autocomplete="off" placeholder="Введите пароль" maxlength="20">
+                    <img src="/img/вход/серый замок.png" alt="" class="input-img input-img-gray">
+                    <img src="/img/вход/зелёный замок.png" alt="" class="input-img input-img-green">
+                    <svg class="graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                      <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="input_tel">
+            <span class="info_in_block">Телефон</span>
+            <div class="form">
+                <div class="input-container">
+                    <input class="input-field" id="phone2" type="tel" autocomplete="off" placeholder="Введите телефон" maxlength="11">
+                    <img src="/img/вход/серый телефон.png" alt="" class="input-img input-img-gray">
+                    <img src="/img/вход/зелёный телефон.png" alt="" class="input-img input-img-green">
+                    <svg class="graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                      <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="form_btn">
+            <button class="reg_form_btn" onclick="register()">Зарегистрироваться</button>
+        </div>
+        <div class="alterantiv2">
+            <div class="text_alternativ">
+                <span>Или зарегистрируйтесь используя</span>
+            </div>
+            <div class="seti">
+                <img class="seti_img" src="/img/вход/vk_icon.png" alt="" width="40px">
+                <img class="seti_img" src="/img/вход/yandex_icon.png" alt="" width="44px">
+                <img class="seti_img" src="/img/вход/google_icon.png" alt="" width="40px">
+            </div>
+        </div>
+        <div class="reg_block2">
+            <span id="toggleLogin">Войти</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+</main>
+
+<footer>
+    
+</footer>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/65e865458d261e1b5f695957/1ho9sn63d';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+<script src="/js/sign_up.js"></script>
+</body>
+</html>
